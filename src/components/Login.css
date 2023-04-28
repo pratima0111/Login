@@ -1,0 +1,42 @@
+.inner-div{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    position: relative;
+    height:100vh;
+}
+
+img{
+    display: flexbox;
+    align-items: center;
+}
+.left{
+    background-color: rgb(37, 94, 100);
+    display: flex;
+    top:0;
+    left:0;
+    height:100%;
+    width:55%;
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%); 
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+.right{
+    background-color:rgb(252, 188, 51);
+    display: flex;
+    right:0;
+    top:0;
+    height:100%;
+    width:55%;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%); 
+    position: absolute;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 980px) {
+    .right{
+        width:100%;
+        clip-path: none; 
+    }
+  }

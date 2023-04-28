@@ -1,0 +1,116 @@
+.App {
+  background-color: white;
+}
+
+.Auth-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 26%) 10px 10px 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.Auth-form-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.form-control {
+  padding: 0.75rem;
+  background: rgb(246, 246, 248);
+  caret-color: rgb(252, 188, 51);
+}
+
+.form-control:focus{
+    background-color:rgb(246, 246, 248) ;
+    box-shadow: 2px 2px 8px 4px rgb(228, 227, 227);
+    border-color: rgb(212, 212, 212);
+}
+
+.btn:hover{
+    background: rgb(48, 120, 128)  !important;
+    border-color: rgb(48, 120, 128);
+}
+
+.btn-primary{
+    background: rgb(37, 94, 100) !important;
+    border-color: rgb(37, 94, 100);
+    padding: 0.75rem;
+    margin-top: 2rem;
+}
+
+
+
+.head{
+    display: flex;
+    box-sizing: border-box;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6%;
+    box-shadow: 0px 15px 10px -15px #cecece;   
+    margin-bottom: 2.5rem; 
+
+}
+
+.alignleft{
+    font-family: monospace;
+    font-weight: bolder;
+    color:rgb(252, 188, 51);
+    letter-spacing: 2px;
+}
+
+.alignright{
+    color:#bebebe;
+
+}
+
+.textdiv{
+    margin-top: 2rem;
+}
+
+.texta{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+
+.textb{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(37, 94, 100);
+}
+.textb:hover{
+    color:rgb(48, 120, 128);
+}
+
+
+@media only screen and (max-width: 980px){
+    .Auth-form{
+        width:20rem;
+    }
+}
